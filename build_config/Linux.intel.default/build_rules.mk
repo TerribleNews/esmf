@@ -216,9 +216,9 @@ endif
 # Conditionally add pthread compiler and linker flags
 #
 ifeq ($(ESMF_PTHREADS),ON)
-ESMF_F90COMPILEOPTS += -pthread -threads
+ESMF_F90COMPILEOPTS +=
 ESMF_CXXCOMPILEOPTS += -pthread
-ESMF_F90LINKOPTS    += -pthread -threads
+ESMF_F90LINKOPTS    +=
 ESMF_CXXLINKOPTS    += -pthread
 ESMF_SL_LIBOPTS     += -pthread
 endif
